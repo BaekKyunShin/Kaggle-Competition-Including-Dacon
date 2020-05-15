@@ -22,5 +22,8 @@
   - 모델 훈련에 대략 3시간 소요
 - 2020.05.07
   - `tensorflow_roBERTa_inference_postprocess_LB_0.713`와 `tensorflow_roBERTa_inference`를 앙상블해보니 LB 0.710으로 성능 향상이 없었음
-- 2020.05.11
-  - Pytorch로 작성된 roBERTa와 BERT 공개 커널을 분석함
+- 2020.05.11 ~ 05.14
+  - Pytorch로 작성된 roBERTa와 BERT 공개 커널을 분석하고 각 모델별로 성능 측정을 해봄, 한 커널 당 훈련/커밋 시간이 거의 3~4시간 가까이 됨
+  - 성능 - roBERTa: 0.712, BERT: 0.706
+- 2020.05.15
+  - Pytorch로 된 roBERTa, BERT 코드에서 epoch과 early_stopping step을 조금 높혀 돌려보니 roBERTa: 0.709, BERT: 0.703으로 성능이 더 떨어짐
