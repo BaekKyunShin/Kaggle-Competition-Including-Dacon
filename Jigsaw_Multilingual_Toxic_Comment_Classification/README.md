@@ -30,3 +30,7 @@
 - 2020.05.09
   - `class_balance_with_pytorch/XLA.ipynb`: [공개 커널 분석] 훈련 데이터의 label은 10배 이상 심하게 불균형함. 따라서 upsampling 혹은 downsampling으로 데이터 간 밸런스를 맞출 필요가 있음. 파이토치 코드이긴 하지만 데이터 밸런싱을 하는 방법에 대해 익힐 수 있는 커널
   - `xlm-roberta-large.ipynb`과 공개 커널 중 성능이 더 높은 roberta와 앙상블하여 제출했지만 공개 커널의 성능보다 더 좋지 않았음
+- 2020.05.14
+  - `Jigsaw TPU: BERT with Huggingface and Keras.ipynb`: [공개 커널 분석] `xlm-roberta-large.ipynb`와 동일하되 모델을 BERT로 수정한 코드 분석
+- - 
+
