@@ -24,7 +24,7 @@
 - 2020.04.30
   - `jigsaw_EDA.ipynb`: [공개 커널 분석] jigsaw comment 데이터 EDA (각종 인사이트 도출)
 - 2020.05.01
-  - [`xlm-roberta-large.ipynb`]([https://github.com/BaekKyunShin/Kaggle-Competition-Including-Dacon/blob/master/Jigsaw_Multilingual_Toxic_Comment_Classification/TPU_%20XLM-Roberta.ipynb](https://github.com/BaekKyunShin/Kaggle-Competition-Including-Dacon/blob/master/Jigsaw_Multilingual_Toxic_Comment_Classification/TPU_ XLM-Roberta.ipynb)): [공개 커널 분석] xlm-roberta-large를 활용한 모델링 [LB 0.9375]
+  - [`xlm-roberta-large.ipynb`](https://github.com/BaekKyunShin/Kaggle-Competition-Including-Dacon/blob/master/Jigsaw_Multilingual_Toxic_Comment_Classification/TPU_ XLM-Roberta.ipynb): [공개 커널 분석] xlm-roberta-large를 활용한 모델링 [LB 0.9375]
   - 코드는 짧지만 성능이 좋은 커널 (현재 최대 vote 공유 커널)
   - 캐글 TPU 기준으로 돌리는데 1시간 소요, 커밋하는데도 꽤 많은 시간 소요
 - 2020.05.09
