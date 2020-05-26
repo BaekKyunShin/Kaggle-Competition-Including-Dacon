@@ -35,4 +35,6 @@
 - 2020.05.17 ~ 05.21
   - pytorch tutorial 학습: [What is PyTorch?](https://pytorch.org/tutorials/beginner/blitz/tensor_tutorial.html#sphx-glr-beginner-blitz-tensor-tutorial-py), [Autograd](https://pytorch.org/tutorials/beginner/blitz/autograd_tutorial.html#sphx-glr-beginner-blitz-autograd-tutorial-py), [Neural Networks](https://pytorch.org/tutorials/beginner/blitz/neural_networks_tutorial.html), [Training a Classifier](https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html), [Learning pytorch with examples](https://pytorch.org/tutorials/beginner/pytorch_with_examples.html) [pytorch nn tutorial](https://pytorch.org/tutorials/beginner/nn_tutorial.html)
   - `Pytorch-XLA: Understanding TPU's and XLA.ipynb`: [공개 커널 분석] TPU 및 Pytorch-XLA 소개 및 활용방안
+- 2020.05.22 ~ 
+  - `xlm-roberta-large.ipynb`의 성능을 향상시키기 위해 여러 기법을 적용해봄: label smoothing은 성능 향상 효과가 없음, 모델에 Convolutional Layer를 추가하니 LB 0.001대 향상함
 
