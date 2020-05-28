@@ -35,6 +35,26 @@
 - 2020.05.17 ~ 05.21
   - pytorch tutorial 학습: [What is PyTorch?](https://pytorch.org/tutorials/beginner/blitz/tensor_tutorial.html#sphx-glr-beginner-blitz-tensor-tutorial-py), [Autograd](https://pytorch.org/tutorials/beginner/blitz/autograd_tutorial.html#sphx-glr-beginner-blitz-autograd-tutorial-py), [Neural Networks](https://pytorch.org/tutorials/beginner/blitz/neural_networks_tutorial.html), [Training a Classifier](https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html), [Learning pytorch with examples](https://pytorch.org/tutorials/beginner/pytorch_with_examples.html) [pytorch nn tutorial](https://pytorch.org/tutorials/beginner/nn_tutorial.html)
   - `Pytorch-XLA: Understanding TPU's and XLA.ipynb`: [공개 커널 분석] TPU 및 Pytorch-XLA 소개 및 활용방안
-- 2020.05.22 ~ 
-  - `xlm-roberta-large.ipynb`의 성능을 향상시키기 위해 여러 기법을 적용해봄: label smoothing은 성능 향상 효과가 없음, 모델에 Convolutional Layer를 추가하니 LB 0.001대 향상함
+- 2020.05.22 ~ 05.28
+  - `xlm-roberta-large.ipynb`의 성능을 향상시키기 위해 여러 기법을 적용해봄: 
+    - label smoothing은 성능 향상 효과가 없음
+    - 모델에 Convolutional Layer를 추가하니 LB 0.001대 향상함 [(Reference1)](https://www.kaggle.com/bharatmohan/xlm-roberta-with-conv-layer-and-ensemble)
+    - Text Cleaning preprocessing은 효과가 없었음 (Reference2)
+    - 한 문장에 오타난 단어가 20개 이상인 데이터는 삭제함
+    - 메모리 절약을 위해 Data Conversions를 함 [(Reference3)](https://www.kaggle.com/pavansanagapati/8-simple-tips-to-save-ram-memory-with-1-gb-dataset)
+
+
+
+
+
+## References
+
+- Reference1 (모델 내 Convolutional Layer 추가 관련) -  https://www.kaggle.com/bharatmohan/xlm-roberta-with-conv-layer-and-ensemble
+- Referene2 (Text Cleaning (pre-processing) 관련) - 
+  - https://www.kaggle.com/pranshu29/jigsaw-with-gpt2-3folds
+  - https://www.kaggle.com/ajax0564/jigsaw-cleaning/output
+  - https://www.kaggle.com/rftexas/cleaning-and-removing-mis-spells-from-texts
+- Reference3 (메모리 절약을 위한 팁 관련) - https://www.kaggle.com/pavansanagapati/8-simple-tips-to-save-ram-memory-with-1-gb-dataset
+
+
 
