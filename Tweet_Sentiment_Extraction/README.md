@@ -28,9 +28,11 @@
   
   - Pytorch로 된 roBERTa와 BERT 공개 커널을 분석하고 각 모델별로 성능 측정을 해봄, 한 커널 당 훈련/커밋 시간이 거의 3~4시간 가까이 됨
   - LB - roBERTa: 0.712, BERT: 0.706
-- 2020.05.15 ~ 05.17
-  
+- 2020.05.15 ~ 05.23
   - 05.11~05.14에 분석한 Pytorch로 된 roBERTa, BERT 코드에서 epoch과 early_stopping step을 조금 높혀 돌려보니 roBERTa: 0.709, BERT: 0.703으로 성능이 더 떨어짐
   - [`pytorch_roBERTa_training_inference_LB_0.716.ipynb`](https://github.com/BaekKyunShin/Kaggle-Competition-Including-Dacon/blob/master/Tweet_Sentiment_Extraction/pytorch_roBERTa_training_inference_LB_0.716.ipynb): 위와 동일한 Pytorch로 된 roBERTa 코드에 epoch과 early_stopping step는 다시 원복시키고, seed 고정하고 label smoothing 적용시켜 보니 LB가 0.716으로 향상됨
-  
   - [`tensorflow_roBERTa_inference_postprocess_LB_0.713`](https://github.com/BaekKyunShin/Kaggle-Competition-Including-Dacon/blob/master/Tweet_Sentiment_Extraction/tensorflow_roBERTa_inference_postprocess_LB_0.713.ipynb) 코드에 label smoothing을 적용시켜보니 LB가 0.711로 떨어짐
+  - Seed에 따른 LB 변동폭이 상당히 컸기 때문에 LB가 높게 나오는 Seed를 최대한 탐색해 봄
+- 2020.05.24 ~ 05.31
+  - 하이퍼 파라미터 튜닝 및 모델 튜닝: Dropout, Linear Layer 추가, Loss Function, 하이퍼 파라미터 변경 등을 해주었으나 단일 roBERTa 모델로는 눈에 띄는 성능 향상은 없었음
+
