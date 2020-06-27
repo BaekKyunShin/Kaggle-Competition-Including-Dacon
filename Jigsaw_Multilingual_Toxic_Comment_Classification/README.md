@@ -40,8 +40,10 @@
     - label smoothing은 성능 향상 효과가 없음
     - 모델에 Convolutional Layer를 추가하니 LB 0.001대 향상함 [(Reference1)](https://www.kaggle.com/bharatmohan/xlm-roberta-with-conv-layer-and-ensemble)
     - Text Cleaning preprocessing은 효과가 없었음 (Reference2)
-    - 한 문장에 오타난 단어가 20개 이상인 데이터는 삭제함
+    - 한 문장에 오타난 단어가 20개 이상인 데이터를 삭제하는 pre-processing을 했지만 오히려 성능이 떨어짐 (Reference2)
     - 메모리 절약을 위해 Data Conversions를 함 [(Reference3)](https://www.kaggle.com/pavansanagapati/8-simple-tips-to-save-ram-memory-with-1-gb-dataset)
+- 2020.05.31 ~ 06.05
+  - 단일 roBERTa 모델로는 더이상의 성능 향상이 힘들다고 판단하여 BERT-base-uncased, BERT-base-cased 등과 앙상블을 위하여 BERT 모델을 만듦
 
 
 
